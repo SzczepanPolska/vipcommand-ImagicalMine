@@ -13,6 +13,7 @@ description: information SuperVIP
 usage: /svip
 UVIP:
 description: information UltraVIP
+usage: /uvip
 YT:
 description: information YouTube
 usage: /youtube
