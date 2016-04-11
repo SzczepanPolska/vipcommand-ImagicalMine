@@ -1,0 +1,21 @@
+name: Komendy
+author: Apple3910
+api: [1.14.0, 2.0.0]
+version: 1.0
+main: Example\\Main
+
+command:
+regulamin:
+description: regulamin serwera
+usage: /regulamin
+VIP:
+description: informacje dotycząca rangi VIP
+usage: /vip
+SVIP:
+description: informacje dotycząca rangi SuperVIP
+usage: /svip
+UVIP:
+description: informacje dotycząca rangi UltraVIP
+YT:
+description: informacje dostarczają rangi YouTube
+usage: /youtube
