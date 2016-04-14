@@ -1,5 +1,5 @@
 <?php
-author Apple3910\VipCommand;
+namespace Apple3910\VipCommand;;
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
