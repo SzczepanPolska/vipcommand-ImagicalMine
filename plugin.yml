@@ -1,19 +1,10 @@
-name: VipCommand
-author: Apple3910
-api: [1.14.0, 2.0.0]
-version: 1.0
-main: Example\\Main
-
-command:
-VIP:
-description: information VIP
-usage: /vip
-SVIP:
-description: information SuperVIP
-usage: /svip
-UVIP:
-description: information UltraVIP
-usage: /uvip
-YT:
-description: information YouTube
-usage: /youtube
+name: RankCommand
+main: vip\Main
+version: 1.0.0
+api: 2.0.0
+commands:
+ vip:
+  description: "Buy VIP"
+  usage: "/vip"
+  permission: vip.vip1
+  default: true
