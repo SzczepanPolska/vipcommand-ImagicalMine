@@ -1,30 +1,32 @@
 <?php
-author Apple3910\VipCommand;
+
+namespace Apple3910/RankCommand;
+
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\utils\Config;
+
 class Main extends PluginBase{
-      public function onEnable(){
-          $this->saveDefaultConfig();
-          $this->getLogger()->info("VipCommand has been enabled");
-      }
-      public function onCommand(CommandSender $sender, Command $command, $label, array $args){
-           $cmd = strtolower($command);
-           if($cmd == "vip") {
-                   $sender->sendMessage($this->getConfig()->get("vipopis"));
-            }
-            if($cmd == "svip") {
-                   $sender->sendMessage($this->getConfig()->get("svipinfo"));
-            }
-            if($cmd == "uvip") {
-                   $sender->sendMessage($this->getConfig()->get("uvipinfo"));
-            }
-             if($cmd == "youtube") {
-                   $sender->sendMessage($this->getConfig()->get("ytinfo"));
-            }
-      }
-      public function onDisable(){
-    
-           $this->getLogger()->info("VipCommand has been disabled");
-      }
+	
+	public function onEnable()
+	  @mkdir($this->getDataFolder(), 0777, true);
+$this->config=new Config($this->getDataFolder() . "config.yml", Config::YAML, array());
+	    {
+		$this->getLogger()->info("vip loaded");
+	}
+	public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+   if(strtolower($command->getName()) === "vip"){
+      $sender->sendMessage("[====================]");
+      $sender->sendMessage("Text1");
+      $sender->sendMessage("Text2");
+      $sender->sendMessage("Text3");
+      $sender->sendMessage("Text4");
+      $sender->sendMessage("Text5");
+      $sender->sendMessage("Text6");
+      $sender->sendMessage("[====================]");
+       return true;
+   }
+
+}
 }
